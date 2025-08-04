@@ -24,34 +24,6 @@ def b(s):
     return s.encode() if s else None
 
 
-c_init_midas = def_c_function(
-    lib,
-    "init_midas",
-    [POINTER(c_int)],  # num_threads
-    None,
-)
-
-
-def init_midas(num_threads):
-    num_threads = c_int(num_threads)
-    c_init_midas(byref(num_threads))
-    return num_threads.value
-
-
-c_read_tracing_stack_size = def_c_function(
-    lib,
-    "read_tracing_stack_size",
-    [POINTER(c_int)],  # tracing_stack_size
-    None,
-)
-
-
-def read_tracing_stack_size(tracing_stack_size):
-    tracing_stack_size = c_int(tracing_stack_size)
-    c_read_tracing_stack_size(byref(tracing_stack_size))
-    return tracing_stack_size.value
-
-
 c_mefa = def_c_function(
     lib,
     "mefa",
@@ -70,9 +42,9 @@ c_mefa = def_c_function(
 
 def mefa(
     dir_path,
-    dir_opts,
-    encoding,
     accum_path,
+    dir_opts=None,
+    encoding=None,
     use_lessmem=False,
     compress_output=False,
     num_threads=0,
@@ -113,19 +85,19 @@ c_meshed = def_c_function(
 
 def meshed(
     dir_path,
-    dir_opts,
-    encoding,
     outlets_path,
-    outlets_layer,
-    outlets_opts,
     id_col,
     wsheds_path,
+    dir_opts=None,
+    encoding=None,
+    outlets_layer=None,
+    outlets_opts=None,
     hier_path=None,
     use_lessmem=False,
     compress_output=False,
     save_outlets=False,
     num_threads=0,
-    tracing_stack_size=3072,
+    tracing_stack_size=0,
 ):
     return c_meshed(
         b(dir_path),
@@ -173,13 +145,13 @@ c_melfp = def_c_function(
 
 def melfp(
     dir_path,
-    dir_opts,
-    encoding,
     outlets_path,
-    outlets_layer,
-    outlets_opts,
     id_col,
     output_path,
+    dir_opts=None,
+    encoding=None,
+    outlets_layer=None,
+    outlets_opts=None,
     oid_col="lfp_id",
     lfp_name="lfp",
     heads_name=None,
@@ -188,7 +160,7 @@ def melfp(
     use_lessmem=2,
     save_outlets=False,
     num_threads=0,
-    tracing_stack_size=3072,
+    tracing_stack_size=0,
 ):
     return c_melfp(
         b(dir_path),
