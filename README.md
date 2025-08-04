@@ -5,6 +5,11 @@
 
 [MIDASFlow](https://github.com/HuidaeCho/midasflow) is the Python package for the [Memory-Efficient I/O-Improved Drainage Analysis System (MIDAS)](https://github.com/HuidaeCho/midas).
 
+## Related projects
+
+* [MIDAS](https://github.com/HuidaeCho/midas)
+* [MIDAS QGIS plugin](https://github.com/HuidaeCho/midas-qgis)
+
 ## References
 
 * [MEFA](https://github.com/HuidaeCho/mefa) (Flow Accumulation): Huidae Cho, July 2023. Memory-Efficient Flow Accumulation Using a Look-Around Approach and Its OpenMP Parallelization. Environmental Modelling & Software 167, 105771. [doi:10.1016/j.envsoft.2023.105771](https://doi.org/10.1016/j.envsoft.2023.105771). [Author's Version](https://idea.isnew.info/publications/Memory-efficient%20flow%20accumulation%20using%20a%20look-around%20approach%20and%20its%20OpenMP%20parallelization%20-%20Cho.2023.pdf).
@@ -14,11 +19,6 @@
 ## Change log
 
 See [here](https://github.com/HuidaeCho/midasflow/blob/main/ChangeLog.md).
-
-## Related projects
-
-* [MIDAS](https://github.com/HuidaeCho/midas)
-* [MIDAS QGIS plugin](https://github.com/HuidaeCho/midas-qgis)
 
 ## Versioning
 
