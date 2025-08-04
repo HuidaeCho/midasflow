@@ -1,6 +1,6 @@
 # MIDASFlow
 
-[![PyPI version](https://badge.fury.io/py/midasflow.svg?cache_burst=1)](https://badge.fury.io/py/midasflow)
+[![PyPI version](https://badge.fury.io/py/midasflow.svg?no_cache=1)](https://badge.fury.io/py/midasflow)
 [![Documentation Status](https://readthedocs.org/projects/midasflow/badge/?version=latest)](https://midasflow.readthedocs.io/en/latest/?badge=latest)
 
 [MIDASFlow](https://github.com/HuidaeCho/midasflow) is the Python package for the [Memory-Efficient I/O-Improved Drainage Analysis System (MIDAS)](https://github.com/HuidaeCho/midas).
