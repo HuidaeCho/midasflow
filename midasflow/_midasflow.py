@@ -71,7 +71,7 @@ c_meshed = def_c_function(
         c_char_p,  # outlets_layer
         c_char_p,  # outlets_opts
         c_char_p,  # id_col
-        c_char_p,  # wsheds_path
+        c_char_p,  # output_path
         c_char_p,  # hier_path
         c_int,  # use_lessmem
         c_int,  # compress_output
@@ -87,7 +87,7 @@ def meshed(
     dir_path,
     outlets_path,
     id_col,
-    wsheds_path,
+    output_path,
     dir_opts=None,
     encoding=None,
     outlets_layer=None,
@@ -107,7 +107,7 @@ def meshed(
         b(outlets_layer),
         b(outlets_opts),
         b(id_col),
-        b(wsheds_path),
+        b(output_path),
         b(hier_path),
         use_lessmem,
         compress_output,
