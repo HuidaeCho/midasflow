@@ -3,12 +3,19 @@
 [![PyPI version](https://badge.fury.io/py/midasflow.svg?no_cache=1)](https://badge.fury.io/py/midasflow)
 [![Documentation Status](https://readthedocs.org/projects/midasflow/badge/?version=latest)](https://midasflow.readthedocs.io/en/latest/?badge=latest)
 
-[MIDASFlow](https://github.com/HuidaeCho/midasflow) is the Python package for the [Memory-Efficient I/O-Improved Drainage Analysis System (MIDAS)](https://github.com/HuidaeCho/midas). [MIDAS](https://github.com/HuidaeCho/midas) needs to be installed separately in `PATH`.
+[MIDASFlow](https://github.com/HuidaeCho/midasflow) is the Python interface to the [Memory-Efficient I/O-Improved Drainage Analysis System (MIDAS)](https://github.com/HuidaeCho/midas). [MIDAS](https://github.com/HuidaeCho/midas) needs to be installed separately in `PATH`.
 
 ## Related projects
 
-* [MIDAS](https://github.com/HuidaeCho/midas)
-* [MIDAS QGIS plugin](https://github.com/HuidaeCho/midas-qgis)
+* [MIDAS](https://github.com/HuidaeCho/midas): Core C library and executables (required for all Python, R, and QGIS interfaces)
+* [MIDASFlow-R](https://github.com/HuidaeCho/midasflow-r): R package
+* [MIDAS-QGIS](https://github.com/HuidaeCho/midas-qgis): QGIS plugin
+
+## Installation
+
+```sh
+pip install midasflow
+```
 
 ## References
 
