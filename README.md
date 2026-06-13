@@ -11,6 +11,7 @@
 * [r.flowaccumulation](https://grass.osgeo.org/grass-stable/manuals/addons/r.flowaccumulation.html): [GRASS](https://grass.osgeo.org/) addon for [MEFA](https://github.com/HuidaeCho/mefa)
 * [r.hydrobasin](https://grass.osgeo.org/grass-stable/manuals/addons/r.hydrobasin.html): [GRASS](https://grass.osgeo.org/) addon for [MESHED](https://github.com/HuidaeCho/meshed)
 * [r.lfp](https://grass.osgeo.org/grass-stable/manuals/addons/r.lfp.html): [GRASS](https://grass.osgeo.org/) addon for [MELFP](https://github.com/HuidaeCho/melfp)
+* [r.upflowlength](https://grass.osgeo.org/grass-stable/manuals/addons/r.lfp.html): [GRASS](https://grass.osgeo.org/) addon for [MEUFL](https://github.com/HuidaeCho/meufl)
 * [MIDASFlow-R](https://github.com/HuidaeCho/midasflow-r): R package
 * [MIDAS-QGIS](https://github.com/HuidaeCho/midas-qgis): QGIS plugin
 
