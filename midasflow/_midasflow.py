@@ -45,7 +45,7 @@ def mefa(
     accum_path,
     dir_opts=None,
     encoding=None,
-    use_lessmem=False,
+    use_lessmem=True,
     compress_output=False,
     num_threads=0,
 ):
@@ -93,7 +93,7 @@ def meshed(
     outlets_layer=None,
     outlets_opts=None,
     hier_path=None,
-    use_lessmem=False,
+    use_lessmem=True,
     compress_output=False,
     save_outlets=False,
     num_threads=0,
