@@ -181,3 +181,42 @@ def melfp(
         num_threads,
         tracing_stack_size,
     )
+
+
+c_meufl = def_c_function(
+    lib,
+    "meufl",
+    [
+        c_char_p,  # dir_path
+        c_char_p,  # dir_opts
+        c_char_p,  # encoding
+        c_char_p,  # flen_path
+        c_int,  # from_one
+        c_int,  # use_lessmem
+        c_int,  # compress_output
+        c_int,  # num_threads
+    ],
+    c_int,
+)
+
+
+def meufl(
+    dir_path,
+    flen_path,
+    dir_opts=None,
+    encoding=None,
+    from_one=False,
+    use_lessmem=2,
+    compress_output=False,
+    num_threads=0,
+):
+    return c_meufl(
+        b(dir_path),
+        b(dir_opts),
+        b(encoding),
+        b(flen_path),
+        from_one,
+        use_lessmem,
+        compress_output,
+        num_threads,
+    )
